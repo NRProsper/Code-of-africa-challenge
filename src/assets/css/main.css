@@ -1,0 +1,13 @@
+/**
+Author: NISHIMWE RUKUNDO Prosper
+Email:  prosper.rk1@gmail.com
+Tel:    +250791154300
+*/
+
+/*
+I used this main.css to wrap all css styles to reduce too much includes in the index.html file
+i.e. Separation of concerns
+*/
+
+@import "./styles.css";
+@import "./responsive.css";

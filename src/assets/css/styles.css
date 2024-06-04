@@ -46,7 +46,7 @@ Resets and Normalization
     padding: 0;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    /*overflow: hidden;*/
+    transition: all 0.4s ease-in-out;
 }
 
 ul, ol, li {
@@ -63,7 +63,7 @@ h1 {
     font-family: 'DIN Condensed', sans-serif;
 }
 
-p {
+p, a {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -99,6 +99,10 @@ Utilities
     max-height: 588px;
 }
 
+/**
+Cards and Gallery Styling
+*/
+
 .cards {
     top: 608px;
     gap: var(--gap-main);
@@ -109,11 +113,15 @@ Utilities
     top: 0;
     left: 0;
     overflow: hidden;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
 
 .card img {
     display: block;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
 
@@ -124,13 +132,18 @@ Utilities
     top: 0;
     width: 100%;
     height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--linear-gradient-color1)), to(var(--linear-gradient-color2)));
+    background: -o-linear-gradient(top, var(--linear-gradient-color1), var(--linear-gradient-color2));
     background: linear-gradient(to bottom, var(--linear-gradient-color1), var(--linear-gradient-color2));
 }
 
 .card:hover img{
     background-color: black;
+    -webkit-filter: grayscale(1) blur(var(--blur));
     filter: grayscale(1) blur(var(--blur));
     /*mix-blend-mode: luminosity;*/
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
     transform: scale(1.05);
 }
 
@@ -180,8 +193,14 @@ Utilities
     visibility: visible;
 }
 
-.card .text-content .bottom p {
+.card .text-content .bottom a {
     color: var(--light-blue);
     font-size: 14px;
+    -webkit-transition: all 2s ease;
+    -o-transition: all 2s ease;
     transition: all 2s ease;
+}
+
+.card .text-content .bottom .read-more {
+    gap: 10px;
 }
