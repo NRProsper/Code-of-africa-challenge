@@ -9,5 +9,5 @@ I used this main.css to wrap all css styles to reduce too much includes in the i
 i.e. Separation of concerns
 */
 
-@import "./styles.css";
-@import "./responsive.css";
+@import "styles.css";
+@import "responsive.css";

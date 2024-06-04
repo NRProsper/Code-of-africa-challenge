@@ -56,6 +56,7 @@ ul, ol, li {
 a {
     text-decoration: none;
     background: transparent;
+    pointer-events: none;
 }
 
 h1 {
@@ -116,6 +117,7 @@ Cards and Gallery Styling
     -webkit-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
+    cursor: pointer;
 }
 
 .card img {
@@ -203,4 +205,66 @@ Cards and Gallery Styling
 
 .card .text-content .bottom .read-more {
     gap: 10px;
+}
+
+/*
+Model styles
+*/
+
+.modal {
+    /*display: none;*/
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.show {
+    opacity: 1;
+}
+
+.modal-content {
+    /*margin: auto;*/
+    margin: 45px auto;
+    display: block;
+    height: 90%;
+    width: auto;
+    border: 2px solid var(--white);
+    animation: zoom-in 0.3s ease-in-out;
+}
+
+#close-modal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+
+/*
+Animations
+*/
+
+@keyframes zoom-in {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
 }

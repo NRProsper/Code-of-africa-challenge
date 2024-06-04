@@ -43,4 +43,9 @@ Making the responsive design
     .card .text-content {
         display: none;
     }
+
+    #close-modal {
+        top: 40px;
+        right: 50px;
+    }
 }
