@@ -56,7 +56,6 @@ ul, ol, li {
 a {
     text-decoration: none;
     background: transparent;
-    pointer-events: none;
 }
 
 h1 {
@@ -176,7 +175,7 @@ Cards and Gallery Styling
 }
 
 .card .text-content .top {
-    margin-bottom: var(--gap);
+    margin-bottom: -18px;
 }
 
 .card .text-content .top .location {
@@ -186,21 +185,22 @@ Cards and Gallery Styling
 }
 
 .card .text-content .bottom {
-    display: none;
     visibility: hidden;
+    opacity: 0;
+}
+
+.card:hover .text-content .top {
+    margin-bottom: var(--gap);
 }
 
 .card:hover .text-content .bottom {
-    display: inline-block;
     visibility: visible;
+    opacity: 1;
 }
 
 .card .text-content .bottom a {
     color: var(--light-blue);
     font-size: 14px;
-    -webkit-transition: all 2s ease;
-    -o-transition: all 2s ease;
-    transition: all 2s ease;
 }
 
 .card .text-content .bottom .read-more {
@@ -212,7 +212,6 @@ Model styles
 */
 
 .modal {
-    /*display: none;*/
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -222,11 +221,13 @@ Model styles
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.8);
     opacity: 0;
-    transition: opacity 0.3s ease;
+    /*visibility: hidden;*/
+    transition: opacity 0.5s ease;
 }
 
 .modal.show {
     opacity: 1;
+    visibility: visible;
 }
 
 .modal-content {
@@ -252,7 +253,7 @@ Model styles
 
 
 .hidden {
-    display: none;
+    visibility: hidden;
 }
 
 
