@@ -1,6 +1,5 @@
 /*
-I tried to create a custom  store.json, but it failed me due to CORS browser issues. And I was not going to use express or django,
-that would be making this small project complex 🤣😌😌
+Modules where not working for me. Maybe I should fix this 🤣😌😌
  */
 
 const images = [
@@ -34,11 +33,14 @@ const images = [
     }
 ];
 
+
+
 document.addEventListener("DOMContentLoaded", () => {
+    
     const cardsContainer = document.querySelector(".cards");
     images.forEach(image => {
         cardsContainer.innerHTML += `
-            <div class="card">
+         <div class="card">
             <img src="${image.url}" alt="Fox Image">
             <div class="text-content">
                 <div class="top">
@@ -56,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `
     })
 
-    //Remove actions on all anchor tags to omit unnecessary page navigations are reload
+    //Remove actions on all anchor tags to omit unnecessary page navigations and reload
     document.querySelectorAll("a").forEach(a => {
         a.addEventListener("click", (e) => {
             e.preventDefault();
