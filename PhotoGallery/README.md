@@ -7,14 +7,14 @@
 
 
 ## Description
-****
+
 This website template shows a photo gallery with the following features:
 * Thumbnail Preview of all pictures
 * Hover animations and Full picture modal
 * A user can view a full Image when the Image is **clicked**
 
 ## Setup/Preview and Installation guidelines
-****
+
 To view the project's Demo:
 * Click on this [Photo Gallery](https://nrprosper.github.io/Code-of-africa-gallery/PhotoGallery/) or
 * Paste this link https://nrprosper.github.io/Code-of-africa-gallery/PhotoGallery/ in the browser url to preview the Website demo

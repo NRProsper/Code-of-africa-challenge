@@ -1,6 +1,6 @@
 # In this Repo are 3 folders
 **Created and Done by NISHIMWE RUKUNDO Prosper**
-****
+
 
 ## 1. Photo Gallery
 This is a repo with a photo gallery made in plain HTML, CSS and Vanilla Javascript.
