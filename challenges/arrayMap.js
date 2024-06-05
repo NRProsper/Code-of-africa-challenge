@@ -6,6 +6,13 @@
 Approach: Sliding Window technique with a hash map to keep store the sums we have so far
  */
 
+/**
+ *
+ * @param arr
+ * @param target
+ * @return {boolean}
+ */
+
 function hasSum(arr, target) {
     let currentSum = 0;
     const prefixSums = new Map();
@@ -34,7 +41,8 @@ const test = () => {
         { arr: [1, 2, 3, 4, 5], target: 50, expected: false },
         { arr: [10, 20, -10, 30, 40], target: 50, expected: true },
         { arr: [-5, 5, -5, 5], target: 0, expected: true },
-        { arr: [10, -10, 10, -10, 10], target: 10, expected: true }
+        { arr: [10, -10, 10, -10, 10], target: 10, expected: true },
+        { arr: [4, 2, 7, 1, 9, 5], target: 17, expected: true }
     ];
 
 

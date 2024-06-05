@@ -6,28 +6,28 @@ import deer from './assets/img4.png';
 const images = [
     {
         "id": 1,
-        "title": "Fennec \n Fox",
+        "title": "Fennec <br /> Fox",
         "location": "India",
         "url": fox,
         "description": "Awesome Fox"
     },
     {
         "id": 2,
-        "title": "HumpBack \n Whale",
+        "title": "HumpBack <br /> Whale",
         "location": "South Africa",
         "url": whale,
         "description": "Awesome Whale"
     },
     {
         "id": 3,
-        "title": "Common Brown \n Baboon",
+        "title": "Common Brown <br /> Baboon",
         "location": "South Africa",
         "url": baboon,
         "description": "Awesome Baboon"
     },
     {
         "id": 4,
-        "title": "Spotted \n Deer",
+        "title": "Spotted <br /> Deer",
         "location": "Amazon",
         "url": deer,
         "description": "Awesome Deer"

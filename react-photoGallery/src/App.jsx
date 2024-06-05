@@ -1,6 +1,6 @@
 import images from "./store.js";
 import Card from "./components/Card.jsx";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Modal from "./components/Modal.jsx";
 
 const App = () => {
@@ -8,9 +8,30 @@ const App = () => {
     const [image, setImage] = useState(null);
 
     const onImageClick = (clickedImage) => {
+        console.log(isOpen)
         setIsOpen(true);
         setImage(clickedImage)
+        console.log(isOpen)
     }
+
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            if (e.key === 'Escape') {
+                closeModal()
+            }
+        };
+
+        document.addEventListener("keydown", handleKeyDown)
+        return () => {
+            document.removeEventListener("keydown", handleKeyDown)
+        }
+    }, []);
+
+    const closeModal = () => {
+        setIsOpen(false);
+        setImage(null);
+    }
+
 
     return (
         <div className="container">
@@ -30,6 +51,7 @@ const App = () => {
                 url={image.url}
                 description={image.description}
                 isOpen={isOpen}
+                onClose={closeModal}
             />: ''}
         </div>
     )
