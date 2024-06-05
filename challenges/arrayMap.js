@@ -3,7 +3,7 @@
  */
 
 /*
-Approach: Sliding Window technique with a hash map to keep store the sums we have so far
+Approach: Sliding Window technique with a hash map to store the sums we have so far
  */
 
 /**

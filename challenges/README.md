@@ -29,6 +29,7 @@ function hasSum(arr, target) {
 
 ## 2. Coding Challenge 2: String manipulation
 Given a string, transform it based on the following rules:
+
 ● If the length of the string is divisible by 3, reverse the entire string.
 
 ● If the length of the string is divisible by 5, replace each character with its ASCII code.
