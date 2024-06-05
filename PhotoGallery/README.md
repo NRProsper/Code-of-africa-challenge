@@ -1,9 +1,11 @@
 # Photo Gallery
 This is a responsive photo gallery built with HTML, CSS and Javascript. This is its preview.
 
-### Desktop preview
+#### Click here for  [Demo](https://nrprosper.github.io/Code-of-africa-gallery/PhotoGallery/)
+
+## Desktop preview
 ![Photo Gallery Demo](./public/preview.png)
-### Mobile preview
+## Mobile preview
 ![Photo Gallery Demo](./public/preview-2.png)
 
 ## How to run this repo
