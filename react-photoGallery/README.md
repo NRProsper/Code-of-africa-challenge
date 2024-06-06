@@ -5,6 +5,7 @@
 **By NISHIMWE RUKUNDO Prosper**
 
 ![Photo Gallery Demo](./public/preview.png)
+![Photo Gallery Demo](./public/preview3.png)
 
 
 ## Description
