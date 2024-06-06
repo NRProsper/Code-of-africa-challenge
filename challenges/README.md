@@ -56,6 +56,7 @@ function stringTransform(str) {
 }
 
 ```
+I assume that the end users have nodejs installed on their computers
 
 # Steps to run this files
 If you have nodejs installed:
