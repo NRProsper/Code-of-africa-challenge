@@ -16,8 +16,8 @@ This website template shows a photo gallery with the following features:
 ## Setup/Preview and Installation guidelines
 
 To view the project's Demo:
-* Click on this [Photo Gallery](https://nrprosper.github.io/Code-of-africa-gallery/PhotoGallery/) or
-* Paste this link https://nrprosper.github.io/Code-of-africa-gallery/PhotoGallery/ in the browser url to preview the Website demo
+* Click on this [Photo Gallery](https://nrprosper.github.io/Code-of-africa-challenge/PhotoGallery/) or
+* Paste this link https://nrprosper.github.io/Code-of-africa-challenge/PhotoGallery/ in the browser url to preview the Website demo
 
 To view it locally:
 1. Clone the repo
